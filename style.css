@@ -11,7 +11,7 @@ body {
 .wrapper {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  gap: 5em;
+  gap: 4em;
   height: 100vh;
 }
 
@@ -51,22 +51,20 @@ body {
 
 .forum {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   margin-bottom: 3em;
   width: 100%;
+  gap: 2em;
 }
 
 .btn_tel {
   display: flex;
-  width: 20%;
   align-items: center;
   justify-content: space-between;
   padding: 8px;
   border: none;
   background-color: white;
   border-bottom: 1px solid rgba(38, 49, 60, 0.48);
-  margin-right: 20px;
 }
 
 img {
@@ -75,8 +73,7 @@ img {
 }
 
 form {
-  width: 80%;
-  text-align: end;
+  text-align: left;
 }
 
 input[type="tel"] {
@@ -115,6 +112,10 @@ footer {
   justify-content: space-between;
   align-items: center;
   width: 100%;
+}
+
+.footer_top a {
+  width: 50%;
 }
 
 .footer_top a,
