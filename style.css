@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: DIN Next TR Bold, sans-serif;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 5em;
+  height: 100vh;
+}
+
+.grafik {
+  background-image: url("desktop_de_light.png");
+}
+
+.image {
+  grid-column: span 4;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: black;
+  background-position: -50%;
+  width: 100%;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 360px;
+  grid-column: span 2;
+  position: relative;
+}
+
+.sideModalContent_header {
+  font-size: 1.75rem;
+  font-weight: 400;
+  margin-bottom: 1em;
+}
+
+.login_text {
+  color: rgba(38, 49, 60, 0.48);
+  font-size: 14px;
+  margin-bottom: 3em;
+}
+
+.forum {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3em;
+  width: 100%;
+}
+
+.btn_tel {
+  display: flex;
+  width: 20%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+  border: none;
+  background-color: white;
+  border-bottom: 1px solid rgba(38, 49, 60, 0.48);
+  margin-right: 20px;
+}
+
+img {
+  width: 20px;
+  height: 14px;
+}
+
+form {
+  width: 80%;
+  text-align: end;
+}
+
+input[type="tel"] {
+  border: none;
+  background-color: white;
+  border-bottom: 1px solid rgba(38, 49, 60, 0.48);
+  padding: 8px;
+  outline: none;
+}
+
+.btn_further {
+  background-color: #7fc2ff;
+  color: white;
+  text-align: center;
+  padding: 1em 2em;
+  border-radius: 3px;
+  width: 40%;
+  border: none;
+  margin-top: 2em;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-bottom: 3em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.footer_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.footer_top a,
+form select,
+.cookies {
+  font-size: 0.625rem;
+  color: rgba(0, 133, 255, 0.8);
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+
+.cookies {
+  background-color: white;
+  color: rgba(38, 49, 60, 0.48);
+  margin-top: 1em;
+}
+
+.cookies:hover {
+  color: #7fc2ff;
+}
